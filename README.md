@@ -12,7 +12,7 @@ docker run \
     -v /path/to/consul/config:/consul/config \
     -v /path/to/consul/data:/consul/data \
     --name=consul \
-    consul agent -server -ui -node=server-1 -bootstrap-expect=1 -client=0.0.0.0
+    consul:1.15 agent -server -ui -node=server-1 -bootstrap-expect=1 -client=0.0.0.0
 ```
 
 ## Reference
